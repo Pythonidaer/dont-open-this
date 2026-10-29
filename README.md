@@ -63,3 +63,9 @@ The original Site passed desktop search, category/topic/year filtering, sorting,
 Promoted from reviewed Site commit `6cb436190c08c08eb286ed803f9734c86d44ee03`. Selecting a category narrows Topic options and counts to that category, independently of search and year filters. Valid topic selections stay; unavailable topics reset to All topics and are removed from the URL. Reset filters restores all 1,259 topics.
 
 Desktop browser QA verified Security (114 topics), Frontend (390 topics), scoped counts matching results, valid selection retention, invalid selection reset, and full reset. Mobile visual QA remains limited as described above. JavaScript syntax and unchanged article-data checksum were checked during promotion.
+
+## Theme and browse cleanup release
+
+Promoted reviewed Site commit `e2ebaa3d9ac9b857b4aea2eee0f100db41925fbe`: freeCodeCamp palette dark/light themes, remembered device/user preference, keyboard-accessible sliding sun/moon switch, and reduced-motion support. Removed the browse snapshot, English-language eyebrow, duplicate category explanations and redundant listing-metadata checkbox. Counts read articles and topics. Coverage and grouping explanations remain in About. Old metadata query parameters are ignored and cleared.
+
+Validated JavaScript syntax, unchanged metadata checksum, checkbox removal, category/topic filtering and reset in desktop browser. Prior theme checks covered keyboard state, saved preference, dialog colors and palette contrast. Mobile visual QA and device preference emulation remain manual checks.
