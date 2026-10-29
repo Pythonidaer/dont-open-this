@@ -57,3 +57,9 @@ Open http://localhost:8000/. Asset links and filters work under the GitHub Pages
 Typography follows the freeCodeCamp study at https://pythonidaer.github.io/can-i-case-study-generate-websites/: Lato headings, 18px/27px reading text, 19.8px listing titles, 14px metadata, and system sans-serif section headings. Responsive sizes are catalog adaptations, not measured freeCodeCamp mobile values. Self-hosted Lato regular/bold fonts retain the SIL OFL in `dist/fonts/OFL.txt`.
 
 The original Site passed desktop search, category/topic/year filtering, sorting, pagination, reset/empty state, filter URL restoration, dialog focus/close/Escape, and overflow checks. Mobile styling is implemented; the available browser did not support viewport resizing for visual mobile QA. This transfer additionally validates byte equality with the reviewed Site, JSON reconciliation, JavaScript syntax, local asset paths, and deployment behavior.
+
+## Category-scoped topics
+
+Promoted from reviewed Site commit `6cb436190c08c08eb286ed803f9734c86d44ee03`. Selecting a category narrows Topic options and counts to that category, independently of search and year filters. Valid topic selections stay; unavailable topics reset to All topics and are removed from the URL. Reset filters restores all 1,259 topics.
+
+Desktop browser QA verified Security (114 topics), Frontend (390 topics), scoped counts matching results, valid selection retention, invalid selection reset, and full reset. Mobile visual QA remains limited as described above. JavaScript syntax and unchanged article-data checksum were checked during promotion.
