@@ -69,3 +69,9 @@ Desktop browser QA verified Security (114 topics), Frontend (390 topics), scoped
 Promoted reviewed Site commit `e2ebaa3d9ac9b857b4aea2eee0f100db41925fbe`: freeCodeCamp palette dark/light themes, remembered device/user preference, keyboard-accessible sliding sun/moon switch, and reduced-motion support. Removed the browse snapshot, English-language eyebrow, duplicate category explanations and redundant listing-metadata checkbox. Counts read articles and topics. Coverage and grouping explanations remain in About. Old metadata query parameters are ignored and cleared.
 
 Validated JavaScript syntax, unchanged metadata checksum, checkbox removal, category/topic filtering and reset in desktop browser. Prior theme checks covered keyboard state, saved preference, dialog colors and palette contrast. Mobile visual QA and device preference emulation remain manual checks.
+
+## Mobile menu release
+
+Promoted reviewed Site commit `c0bc5c111925cba7071815ca09b17e3467730d57`. Adapted typography-learning's mobile disclosure menu below 1080px, with animated hamburger, dropdown, theme switch, Escape/outside-click dismissal, inert hidden links and focus return. Desktop navigation remains visible. Reduced-motion preferences disable the animation.
+
+JavaScript syntax, diff checks and unchanged article-data checksum passed. Compact open/close, Escape focus return and desktop breakpoint state were checked during Site QA. Mobile visual rendering still needs a phone check because the QA browser did not expose viewport resizing.
